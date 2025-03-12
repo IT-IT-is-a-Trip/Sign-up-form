@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="extra-wrapper">
+        <div class="image-container"><img src="peter-robbins-NTZPPJy_RLo-unsplash.jpg" alt="forest path">
+            <div class="odin-logo">
+                <img src="odin-lined.png" alt="">
+                <p>ODIN</p>
+            </div>
+            <div id="credit">prod by blah blah</div>
+        </div>
+        <div class="wrapper">
+            <div class="text">
+                <div class="text-top">
+                    This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.
+                </div>
+
+                <div class="text-bottom">You know you want to.</div>
+            </div>
+            <form action="example" method="POST">
+                <div class="text-inputs">
+                    <div class="form-text">Let`s do this!</div>
+                    <div class="form-fields">
+                        <div class="row">
+                            <div class="input fist-name">
+                                <label for="first-name">FIRST NAME</label>
+                                <input required minlength="6" maxlength="20" type="text" id="first-name" name="name">
+                            </div>
+                            <div class="input email">
+                                <label for="email">EMAIL</label>
+                                <input required minlength="6" maxlength="20" type="email" id="email" name="email">
+                            </div>
+                            <div class="input pass">
+                                <label for="password">PASSWORD</label>
+                                <input required minlength="8" maxlength="20" type="password" id="password" name="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input last-name">
+                                <label for="last-name">LAST NAME</label>
+                                <input required minlength="6" maxlength="20" type="text" id="last-name" name="name">
+                            </div>
+                            <div class="input number">
+                                <label for="number">PHONE NUMBER</label>
+                                <input required minlength="10" maxlength="15" type="text" id="number" name="number">
+                            </div>
+                            <div class="input conf-pass">
+                                <label for="conf-password">CONFIRM PASSWORD</label>
+                                <input required minlength="8" maxlength="20" type="password" id="conf-password"
+                                    name="conf-password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom-block">
+                <div class="create-account-button"><button type="submit">Create Account</button></div>
+                <div class="log-in">Already have an account? <a class="log-in-text" href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

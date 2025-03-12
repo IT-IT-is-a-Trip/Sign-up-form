@@ -1,0 +1,217 @@
+Use a more-intuitive box-sizing model *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+/* img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  } */
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+@font-face {
+  font-family: "Norsebold";
+  src: url(Norse-Bold\ \(1\).otf);
+}
+
+.extra-wrapper {
+  max-height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container img {
+  height: 100%;
+  width: 35vw;
+}
+
+.odin-logo {
+  top: 20vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  object-fit: cover;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-family: Norsebold;
+  align-self: center;
+}
+
+.odin-logo img {
+  width: 10vw;
+}
+
+.odin-logo>p {
+  font-size: 10vw;
+  color: aliceblue;
+}
+
+#credit {
+  color: aliceblue;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1%;
+}
+
+
+
+/* /*right*\ */
+
+.text {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10% 7% 10% 7%;
+  justify-content: space-between;
+}
+.text>div {
+  width: 85%;
+  font-size: 1.5em;
+}
+.text-bottom {
+  
+}
+
+.wrapper {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 241, 241);
+}
+form {
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  padding: 1.5% 45% 2% 7%;
+}
+.form-fields {
+  display: flex;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 0 0;
+  gap: 0.1em;
+}
+.bottom-block {
+  height: 29%;
+  padding: 0 0 0 7%;
+}
+.log-in-text {
+  text-decoration: none;
+   color: #596D48;
+}
+.form-text {
+  font-size: 2em;
+  font-weight: 800;
+  color: #596D48;
+  padding: 0 0 3.5% 0;
+}
+.input>label {
+  color: rgb(12, 12, 12);
+  text-shadow: 1px 1px 1px gray;
+}
+.input>input {
+  width: 120%;
+  border-radius: 3px;
+  border: 1px solid rgb(138, 138, 138);
+}
+input:focus {
+  outline:1.5px solid #596D48;
+}
+input:focus:invalid {
+  outline: 1.5px solid red;
+}
+input:valid {
+  outline:1.5px solid #596D48;
+}
+
+
+
+
+.create-account-button {
+  padding: 3% 0 3%;
+}
+.create-account-button button{
+  font-weight: 800;
+  background-color: #596D48;
+  border-radius: 10px;
+  border: 0 solid;
+  box-shadow: 1px 1px 1.5px 1.5px;
+  color: white;
+  padding: 1% 5% 1% 5%;
+}
